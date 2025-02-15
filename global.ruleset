@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules for Currency Converter App" Description="These rules focus on critical issues for the Currency Converter App." ToolsVersion="17.0">
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.CSharp" RuleNamespace="Microsoft.CodeAnalysis.CSharp">
+    <Rule Id="CS1572" Action="None" />
+    <Rule Id="CS1573" Action="None" />
+    <Rule Id="CS1587" Action="None" />
+    <Rule Id="CS1591" Action="None" />
+  </Rules>
+</RuleSet>

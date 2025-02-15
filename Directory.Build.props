@@ -1,0 +1,30 @@
+<Project>
+    <PropertyGroup>
+        <Deterministic>true</Deterministic>
+        <LangVersion>11</LangVersion>
+        <RootNamespace>CurrencyConverter</RootNamespace>
+
+        <VersionMajor>2</VersionMajor>
+        <VersionMinor>0</VersionMinor>
+        <VersionRelease>0</VersionRelease>
+        <VersionRevision>$([System.DateTime]::Now.ToString("MMdd"))</VersionRevision>
+        <VersionDailyBuildCount>1</VersionDailyBuildCount>
+
+        <FormattedTimestampFull>$([System.DateTime]::UtcNow.ToString("MMM-dd-yyyy HH:mm zzz"))</FormattedTimestampFull>
+
+        <Title>Currency Converter</Title>
+        <Authors>CurrencyConverter App.</Authors>
+        <Description>Currency Converter API</Description>
+        <TargetFramework>net8.0</TargetFramework>
+        <CodeAnalysisRuleSet>$(MSBuildProjectDirectory)\\..\\..\\global.ruleset</CodeAnalysisRuleSet>
+        <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+
+        <Version>$(VersionMajor).$(VersionMinor)</Version>
+        <FileVersion>$(VersionMajor).$(VersionMinor).$(VersionRelease).$(VersionRevision)$(VersionDailyBuildCount)</FileVersion>
+        <InformationalVersion>$(FileVersion) [$(FormattedTimestampFull)]</InformationalVersion>
+
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<ImplicitUsings>disable</ImplicitUsings>
+
+    </PropertyGroup>
+</Project>
